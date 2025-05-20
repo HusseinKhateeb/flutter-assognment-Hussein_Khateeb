@@ -1,4 +1,4 @@
-# auth_project
+# Hussein Khateeb Project
 
 A new Flutter project.
 
