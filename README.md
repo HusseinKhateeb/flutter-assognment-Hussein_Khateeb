@@ -1,4 +1,4 @@
-# Hussein Khateeb Project
+# Hussein Khateeb
 
 A new Flutter project.
 
