@@ -1,18 +1,29 @@
 import 'package:flutter/material.dart';
 
 class OutputScreen extends StatelessWidget {
+  final String? username;
+  final String? password;
+  final String? email;
+  final bool? rememberMe;
+  final String? gender;
+  final String? country;
+  final double? age;
+  final DateTime? selectedDate;
+
+  const OutputScreen({
+    super.key,
+    this.username,
+    this.password,
+    this.email,
+    this.rememberMe,
+    this.gender,
+    this.country,
+    this.age,
+    this.selectedDate,
+  });
+
   @override
   Widget build(BuildContext context) {
-    final args = ModalRoute.of(context)?.settings.arguments as Map<String, dynamic>?;
-    final username = args != null ? args['username'] as String? : null;
-    final password = args != null ? args['password'] as String? : null;
-    final email = args != null ? args['email'] as String? : null;
-    final rememberMe = args != null ? args['rememberMe'] as bool? : null;
-    final gender = args != null ? args['gender'] as String? : null;
-    final country = args != null ? args['country'] as String? : null;
-    final age = args != null ? args['age'] as double? : null;
-    final selectedDate = args != null ? args['selectedDate'] as DateTime? : null;
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('Form Output'),
